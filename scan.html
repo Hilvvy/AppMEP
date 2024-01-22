@@ -126,6 +126,7 @@
                             txts.push(results[i].barcodeText);
                             localization = results[i].localizationResult;
                             drawOverlay(localization, results[i].barcodeText);
+                            alert(results[i].barcodeText)
                         }
                         document.getElementById('result').innerHTML = txts.join(', ');
                     }
